@@ -40,5 +40,21 @@ namespace ProductReview
                                select productReviews;
             DisplayRecords(recordedData);
         }
+
+        // uc-4
+        public void RetrieveCountOfRecords(List<ProductReview> listProductReview)
+        {
+            var recordedData = listProductReview.GroupBy(y => y.ProducID).Select(x => new { ProductID = x.Key, Count = x.Count() });
+
+            Console.WriteLine("\nCount of reviews for each product:");
+            Console.WriteLine($"{new string('-', 30)}");
+            Console.WriteLine($"| {"ProductID", 13} | {"Count", 10} |");
+            Console.WriteLine($"{new string('-', 30)}");
+            foreach (var list in recordedData)
+            {
+                Console.WriteLine($"| {list.ProductID, 13} | {list.Count, 10} |");
+            }
+            Console.WriteLine($"{new string('-', 30)}");
+        }
     }
 }

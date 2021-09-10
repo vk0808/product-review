@@ -31,6 +31,9 @@ namespace ProductReview
 
             // uc-3
             management.SelectedRecords(productReviewList);
+
+            // uc-4
+            management.RetrieveCountOfRecords(productReviewList);
         }
     }
 }
