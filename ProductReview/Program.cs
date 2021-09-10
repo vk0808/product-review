@@ -28,6 +28,9 @@ namespace ProductReview
             // uc-2
             Management management = new Management();
             management.TopRecords(productReviewList);
+
+            // uc-3
+            management.SelectedRecords(productReviewList);
         }
     }
 }

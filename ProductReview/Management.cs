@@ -29,5 +29,16 @@ namespace ProductReview
                                 select productReviews).Take(3);
             DisplayRecords(recordedData);
         }
+
+        // uc-3
+        public void SelectedRecords(List<ProductReview> listProductReview)
+        {
+            Console.WriteLine("\nRecords with rating > 3 and productId 1/4/9: ");
+            var recordedData = from productReviews in listProductReview
+                               where (productReviews.ProducID == 1 || productReviews.ProducID == 4 || productReviews.ProducID == 9)
+                               && productReviews.Rating > 3
+                               select productReviews;
+            DisplayRecords(recordedData);
+        }
     }
 }

@@ -1,0 +1,13 @@
+C:\Users\vk476\Desktop\Fellowship Program\Practice Problems\Day35Problems\ProductReview\ProductReview\bin\Debug\netcoreapp3.1\ProductReview.exe
+C:\Users\vk476\Desktop\Fellowship Program\Practice Problems\Day35Problems\ProductReview\ProductReview\bin\Debug\netcoreapp3.1\ProductReview.deps.json
+C:\Users\vk476\Desktop\Fellowship Program\Practice Problems\Day35Problems\ProductReview\ProductReview\bin\Debug\netcoreapp3.1\ProductReview.runtimeconfig.json
+C:\Users\vk476\Desktop\Fellowship Program\Practice Problems\Day35Problems\ProductReview\ProductReview\bin\Debug\netcoreapp3.1\ProductReview.runtimeconfig.dev.json
+C:\Users\vk476\Desktop\Fellowship Program\Practice Problems\Day35Problems\ProductReview\ProductReview\bin\Debug\netcoreapp3.1\ProductReview.dll
+C:\Users\vk476\Desktop\Fellowship Program\Practice Problems\Day35Problems\ProductReview\ProductReview\bin\Debug\netcoreapp3.1\ProductReview.pdb
+C:\Users\vk476\Desktop\Fellowship Program\Practice Problems\Day35Problems\ProductReview\ProductReview\obj\Debug\netcoreapp3.1\ProductReview.csproj.AssemblyReference.cache
+C:\Users\vk476\Desktop\Fellowship Program\Practice Problems\Day35Problems\ProductReview\ProductReview\obj\Debug\netcoreapp3.1\ProductReview.AssemblyInfoInputs.cache
+C:\Users\vk476\Desktop\Fellowship Program\Practice Problems\Day35Problems\ProductReview\ProductReview\obj\Debug\netcoreapp3.1\ProductReview.AssemblyInfo.cs
+C:\Users\vk476\Desktop\Fellowship Program\Practice Problems\Day35Problems\ProductReview\ProductReview\obj\Debug\netcoreapp3.1\ProductReview.csproj.CoreCompileInputs.cache
+C:\Users\vk476\Desktop\Fellowship Program\Practice Problems\Day35Problems\ProductReview\ProductReview\obj\Debug\netcoreapp3.1\ProductReview.dll
+C:\Users\vk476\Desktop\Fellowship Program\Practice Problems\Day35Problems\ProductReview\ProductReview\obj\Debug\netcoreapp3.1\ProductReview.pdb
+C:\Users\vk476\Desktop\Fellowship Program\Practice Problems\Day35Problems\ProductReview\ProductReview\obj\Debug\netcoreapp3.1\ProductReview.genruntimeconfig.cache
