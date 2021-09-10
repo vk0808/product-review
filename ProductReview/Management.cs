@@ -56,5 +56,21 @@ namespace ProductReview
             }
             Console.WriteLine($"{new string('-', 30)}");
         }
+
+        // uc-5
+        public void RetrieveIDAndReview(List<ProductReview> listProductReview)
+        {
+            var recordedData = listProductReview.Select(x => new { ProductID = x.ProducID, ProductReview = x.Review });
+
+            Console.WriteLine("\nReviews for each product:");
+            Console.WriteLine($"{new string('-', 30)}");
+            Console.WriteLine($"| {"ProductID",13} | {"Review",10} |");
+            Console.WriteLine($"{new string('-', 30)}");
+            foreach (var list in recordedData)
+            {
+                Console.WriteLine($"| {list.ProductID,13} | {list.ProductReview,10} |");
+            }
+            Console.WriteLine($"{new string('-', 30)}");
+        }
     }
 }
