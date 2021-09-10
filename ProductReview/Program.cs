@@ -24,6 +24,10 @@ namespace ProductReview
                 new ProductReview(){ProducID=10,UserID=1,Rating=8,Review="nice",isLike=true},
                 new ProductReview(){ProducID=11,UserID=1,Rating=3,Review="nice",isLike=true}
             };
+
+            // uc-2
+            Management management = new Management();
+            management.TopRecords(productReviewList);
         }
     }
 }

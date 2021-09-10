@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 
 namespace ProductReview
 {
-    public class Management
+    class Management
     {
         // uc-1
-        void DisplayRecords(IEnumerable<ProductReview> recordedData)
+        public void DisplayRecords(IEnumerable<ProductReview> recordedData)
         {
             Console.WriteLine($"{new string('-', 70)}");
             Console.WriteLine($"|{"ProductID",15} | {"UserID",10} | {"Rating",10} | {"Review",10} | {"isLike",10} |");
@@ -17,6 +18,16 @@ namespace ProductReview
                 Console.WriteLine($"|{list.ProducID,15} | {list.UserID,10} | {list.Rating,10} | {list.Review,10} | {list.isLike,10} |");
             }
             Console.WriteLine($"{new string('-', 70)}\n");
+        }
+
+        // uc-2
+        public void TopRecords(List<ProductReview> listProductReview)
+        {
+            Console.WriteLine("\nTop 3 records: ");
+            var recordedData = (from productReviews in listProductReview
+                                orderby productReviews.Rating descending
+                                select productReviews).Take(3);
+            DisplayRecords(recordedData);
         }
     }
 }
