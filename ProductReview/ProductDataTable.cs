@@ -24,8 +24,13 @@ namespace ProductReview
             table.Rows.Add(3, 2, 5, "Very Nice", true);
             table.Rows.Add(1, 1, 3, "Good", true);
             table.Rows.Add(2, 1, 4, "Good", true);
-            table.Rows.Add(3, 1, 2, "Good", true);
-            table.Rows.Add(4, 1, 6, "Good", true);
+            table.Rows.Add(3, 1, 2, "Bad", true);
+            table.Rows.Add(4, 5, 6, "Good", true);
+            table.Rows.Add(1, 6, 3, "Not Good", true);
+            table.Rows.Add(2, 7, 4, "Good", true);
+            table.Rows.Add(3, 8, 2, "Bad", true);
+            table.Rows.Add(4, 9, 6, "Nice", true);
+            table.Rows.Add(1, 10, 3, "Good", true);
             return table;
         }
     }

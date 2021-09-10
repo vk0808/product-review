@@ -138,5 +138,16 @@ namespace ProductReview
 
             DisplayRecords(records);
         }
+
+        // uc-11
+        public void RetrievRecords_PerticularUserID(DataTable table)
+        {
+            var records = from products in table.AsEnumerable()
+                          .OrderBy(x => x["Rating"])
+                          .Where(x => x["UserID"].Equals(10))
+                          select products;
+            Console.WriteLine("\nProducts whose UserID is 10: ");
+            DisplayRecords(records);
+        }
     }
 }
