@@ -72,5 +72,14 @@ namespace ProductReview
             }
             Console.WriteLine($"{new string('-', 30)}");
         }
+
+        // uc-6
+        public void SkipTop5Records(List<ProductReview> listProductReview)
+        {
+            Console.WriteLine("\nSkip top 5 records: ");
+            var recordedData = (from productReviews in listProductReview select productReviews).Skip(5).ToList(); ;
+
+            DisplayRecords(recordedData);
+        }
     }
 }

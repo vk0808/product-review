@@ -37,6 +37,10 @@ namespace ProductReview
 
             // uc-5
             management.RetrieveIDAndReview(productReviewList);
+
+            // uc-6
+            management.SkipTop5Records(productReviewList);
+
         }
     }
 }
