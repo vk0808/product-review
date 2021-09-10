@@ -61,11 +61,11 @@ namespace ProductReview
 
             Console.WriteLine("\nCount of reviews for each product:");
             Console.WriteLine($"{new string('-', 30)}");
-            Console.WriteLine($"| {"ProductID", 13} | {"Count", 10} |");
+            Console.WriteLine($"| {"ProductID",13} | {"Count",10} |");
             Console.WriteLine($"{new string('-', 30)}");
             foreach (var list in recordedData)
             {
-                Console.WriteLine($"| {list.ProductID, 13} | {list.Count, 10} |");
+                Console.WriteLine($"| {list.ProductID,13} | {list.Count,10} |");
             }
             Console.WriteLine($"{new string('-', 30)}");
         }
@@ -102,6 +102,29 @@ namespace ProductReview
 
             Console.WriteLine("\nRetrieve all records from DataTable:");
             DisplayRecords(records);
+        }
+
+        // uc-9
+        public void FindAverageRating(DataTable table)
+        {
+            var records = table.Rows
+                          .Cast<DataRow>()
+                          .GroupBy(x => x.Field<int>("ProductID"))
+                          .Select(x => new
+                          {
+                              ProductID = x.Key,
+                              Average = x.Average(x => x.Field<int>("Rating"))
+                          }).ToList();
+
+            Console.WriteLine("\nAverage rating for each Product ID:");
+            Console.WriteLine($"{new string('-', 30)}");
+            Console.WriteLine($"| {"ProductID",13} | {"Average",10} |");
+            Console.WriteLine($"{new string('-', 30)}");
+            foreach (var list in records)
+            {
+                Console.WriteLine($"| {list.ProductID,13} | {Math.Round(list.Average, 2),10} |");
+            }
+            Console.WriteLine($"{new string('-', 30)}");
         }
     }
 }

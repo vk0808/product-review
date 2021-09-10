@@ -50,7 +50,8 @@ namespace ProductReview
             DataTable table = data.AddToDataTable();
             management.DisplayDataTable_WithIsLikeValueTrue(table);
 
-
+            // uc-9
+            management.FindAverageRating(table);
         }
     }
 }
