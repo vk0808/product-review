@@ -126,5 +126,17 @@ namespace ProductReview
             }
             Console.WriteLine($"{new string('-', 30)}");
         }
+
+        // uc-10
+        public void DisplayRecords_WithIsLike_Nice(DataTable table)
+        {
+            var records = from products in table.AsEnumerable()
+                          .Where(x => x["Review"].ToString()
+                          .Contains("Nice")) select products;
+
+            Console.WriteLine("\nRecords whose isLike = Nice: ");
+
+            DisplayRecords(records);
+        }
     }
 }

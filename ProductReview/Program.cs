@@ -52,6 +52,9 @@ namespace ProductReview
 
             // uc-9
             management.FindAverageRating(table);
+
+            // uc-10
+            management.DisplayRecords_WithIsLike_Nice(table);
         }
     }
 }
