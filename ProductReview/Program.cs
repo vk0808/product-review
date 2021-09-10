@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 
 namespace ProductReview
 {
@@ -40,6 +41,15 @@ namespace ProductReview
 
             // uc-6
             management.SkipTop5Records(productReviewList);
+
+            // uc-7
+            ProductDataTable data = new ProductDataTable();
+            data.AddToDataTable();
+
+            // uc-8
+            DataTable table = data.AddToDataTable();
+            management.DisplayDataTable_WithIsLikeValueTrue(table);
+
 
         }
     }
